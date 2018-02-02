@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdminLTE 2 | Dashboard</title>
+    <title>PGE-RCM</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
@@ -36,6 +36,9 @@
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
 
+  <!-- DataTables -->
+  <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
+  
     <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
     <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
@@ -578,19 +581,19 @@
             <!-- Content Header (Page header) -->
             <section class="content-header">
                 <h1>
-                    Dashboard
-                    <small>Control panel</small>
+                    风险预控票
+                    <small class="hide">Control panel</small>
                 </h1>
                 <ol class="breadcrumb">
-                    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-                    <li class="active">Dashboard</li>
+                    <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+                    <li class="active">风险预控票</li>
                 </ol>
             </section>
 
             <!-- Main content -->
             <section class="content">
                 <!-- Small boxes (Stat box) -->
-                <div class="row">
+                <div class="hide row">
                     <div class="col-lg-3 col-xs-6">
                         <!-- small box -->
                         <div class="small-box bg-aqua">
@@ -655,8 +658,460 @@
                 <!-- /.row -->
                 <!-- Main row -->
                 <div class="row">
+
+                  <!-- table -->
+                  <div class="box">
+                    <div class="box-header">
+                      <h3 class="hide box-title">Data Table With Full Features</h3>
+                    </div>
+                    <!-- /.box-header -->
+                    <div class="box-body">
+                      <table id="example1" class="table table-bordered table-striped">
+                        <thead>
+                        <tr>
+                          <th>序号</th>
+                          <th>日期</th>
+                          <th>预控票编号</th>
+                          <th>工作任务</th>
+                          <th>签发人 / 负责人</th>
+                        </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>2017-09-09</td>
+                              <td>风险预控票001号</td>
+                              <td>引风机检修</td>
+                              <td>张三 / 赵四</td>
+                            </tr>
+                        </tbody>
+                        <tbody class="hide">
+                        <tr>
+                          <td>Trident</td>
+                          <td>Internet
+                            Explorer 4.0
+                          </td>
+                          <td>Win 95+</td>
+                          <td> 4</td>
+                          <td>X</td>
+                        </tr>
+                        <tr>
+                          <td>Trident</td>
+                          <td>Internet
+                            Explorer 5.0
+                          </td>
+                          <td>Win 95+</td>
+                          <td>5</td>
+                          <td>C</td>
+                        </tr>
+                        <tr>
+                          <td>Trident</td>
+                          <td>Internet
+                            Explorer 5.5
+                          </td>
+                          <td>Win 95+</td>
+                          <td>5.5</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Trident</td>
+                          <td>Internet
+                            Explorer 6
+                          </td>
+                          <td>Win 98+</td>
+                          <td>6</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Trident</td>
+                          <td>Internet Explorer 7</td>
+                          <td>Win XP SP2+</td>
+                          <td>7</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Trident</td>
+                          <td>AOL browser (AOL desktop)</td>
+                          <td>Win XP</td>
+                          <td>6</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Firefox 1.0</td>
+                          <td>Win 98+ / OSX.2+</td>
+                          <td>1.7</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Firefox 1.5</td>
+                          <td>Win 98+ / OSX.2+</td>
+                          <td>1.8</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Firefox 2.0</td>
+                          <td>Win 98+ / OSX.2+</td>
+                          <td>1.8</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Firefox 3.0</td>
+                          <td>Win 2k+ / OSX.3+</td>
+                          <td>1.9</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Camino 1.0</td>
+                          <td>OSX.2+</td>
+                          <td>1.8</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Camino 1.5</td>
+                          <td>OSX.3+</td>
+                          <td>1.8</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Netscape 7.2</td>
+                          <td>Win 95+ / Mac OS 8.6-9.2</td>
+                          <td>1.7</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Netscape Browser 8</td>
+                          <td>Win 98SE+</td>
+                          <td>1.7</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Netscape Navigator 9</td>
+                          <td>Win 98+ / OSX.2+</td>
+                          <td>1.8</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Mozilla 1.0</td>
+                          <td>Win 95+ / OSX.1+</td>
+                          <td>1</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Mozilla 1.1</td>
+                          <td>Win 95+ / OSX.1+</td>
+                          <td>1.1</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Mozilla 1.2</td>
+                          <td>Win 95+ / OSX.1+</td>
+                          <td>1.2</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Mozilla 1.3</td>
+                          <td>Win 95+ / OSX.1+</td>
+                          <td>1.3</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Mozilla 1.4</td>
+                          <td>Win 95+ / OSX.1+</td>
+                          <td>1.4</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Mozilla 1.5</td>
+                          <td>Win 95+ / OSX.1+</td>
+                          <td>1.5</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Mozilla 1.6</td>
+                          <td>Win 95+ / OSX.1+</td>
+                          <td>1.6</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Mozilla 1.7</td>
+                          <td>Win 98+ / OSX.1+</td>
+                          <td>1.7</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Mozilla 1.8</td>
+                          <td>Win 98+ / OSX.1+</td>
+                          <td>1.8</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Seamonkey 1.1</td>
+                          <td>Win 98+ / OSX.2+</td>
+                          <td>1.8</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Gecko</td>
+                          <td>Epiphany 2.20</td>
+                          <td>Gnome</td>
+                          <td>1.8</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Webkit</td>
+                          <td>Safari 1.2</td>
+                          <td>OSX.3</td>
+                          <td>125.5</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Webkit</td>
+                          <td>Safari 1.3</td>
+                          <td>OSX.3</td>
+                          <td>312.8</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Webkit</td>
+                          <td>Safari 2.0</td>
+                          <td>OSX.4+</td>
+                          <td>419.3</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Webkit</td>
+                          <td>Safari 3.0</td>
+                          <td>OSX.4+</td>
+                          <td>522.1</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Webkit</td>
+                          <td>OmniWeb 5.5</td>
+                          <td>OSX.4+</td>
+                          <td>420</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Webkit</td>
+                          <td>iPod Touch / iPhone</td>
+                          <td>iPod</td>
+                          <td>420.1</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Webkit</td>
+                          <td>S60</td>
+                          <td>S60</td>
+                          <td>413</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Presto</td>
+                          <td>Opera 7.0</td>
+                          <td>Win 95+ / OSX.1+</td>
+                          <td>-</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Presto</td>
+                          <td>Opera 7.5</td>
+                          <td>Win 95+ / OSX.2+</td>
+                          <td>-</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Presto</td>
+                          <td>Opera 8.0</td>
+                          <td>Win 95+ / OSX.2+</td>
+                          <td>-</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Presto</td>
+                          <td>Opera 8.5</td>
+                          <td>Win 95+ / OSX.2+</td>
+                          <td>-</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Presto</td>
+                          <td>Opera 9.0</td>
+                          <td>Win 95+ / OSX.3+</td>
+                          <td>-</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Presto</td>
+                          <td>Opera 9.2</td>
+                          <td>Win 88+ / OSX.3+</td>
+                          <td>-</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Presto</td>
+                          <td>Opera 9.5</td>
+                          <td>Win 88+ / OSX.3+</td>
+                          <td>-</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Presto</td>
+                          <td>Opera for Wii</td>
+                          <td>Wii</td>
+                          <td>-</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Presto</td>
+                          <td>Nokia N800</td>
+                          <td>N800</td>
+                          <td>-</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Presto</td>
+                          <td>Nintendo DS browser</td>
+                          <td>Nintendo DS</td>
+                          <td>8.5</td>
+                          <td>C/A<sup>1</sup></td>
+                        </tr>
+                        <tr>
+                          <td>KHTML</td>
+                          <td>Konqureror 3.1</td>
+                          <td>KDE 3.1</td>
+                          <td>3.1</td>
+                          <td>C</td>
+                        </tr>
+                        <tr>
+                          <td>KHTML</td>
+                          <td>Konqureror 3.3</td>
+                          <td>KDE 3.3</td>
+                          <td>3.3</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>KHTML</td>
+                          <td>Konqureror 3.5</td>
+                          <td>KDE 3.5</td>
+                          <td>3.5</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Tasman</td>
+                          <td>Internet Explorer 4.5</td>
+                          <td>Mac OS 8-9</td>
+                          <td>-</td>
+                          <td>X</td>
+                        </tr>
+                        <tr>
+                          <td>Tasman</td>
+                          <td>Internet Explorer 5.1</td>
+                          <td>Mac OS 7.6-9</td>
+                          <td>1</td>
+                          <td>C</td>
+                        </tr>
+                        <tr>
+                          <td>Tasman</td>
+                          <td>Internet Explorer 5.2</td>
+                          <td>Mac OS 8-X</td>
+                          <td>1</td>
+                          <td>C</td>
+                        </tr>
+                        <tr>
+                          <td>Misc</td>
+                          <td>NetFront 3.1</td>
+                          <td>Embedded devices</td>
+                          <td>-</td>
+                          <td>C</td>
+                        </tr>
+                        <tr>
+                          <td>Misc</td>
+                          <td>NetFront 3.4</td>
+                          <td>Embedded devices</td>
+                          <td>-</td>
+                          <td>A</td>
+                        </tr>
+                        <tr>
+                          <td>Misc</td>
+                          <td>Dillo 0.8</td>
+                          <td>Embedded devices</td>
+                          <td>-</td>
+                          <td>X</td>
+                        </tr>
+                        <tr>
+                          <td>Misc</td>
+                          <td>Links</td>
+                          <td>Text only</td>
+                          <td>-</td>
+                          <td>X</td>
+                        </tr>
+                        <tr>
+                          <td>Misc</td>
+                          <td>Lynx</td>
+                          <td>Text only</td>
+                          <td>-</td>
+                          <td>X</td>
+                        </tr>
+                        <tr>
+                          <td>Misc</td>
+                          <td>IE Mobile</td>
+                          <td>Windows Mobile 6</td>
+                          <td>-</td>
+                          <td>C</td>
+                        </tr>
+                        <tr>
+                          <td>Misc</td>
+                          <td>PSP browser</td>
+                          <td>PSP</td>
+                          <td>-</td>
+                          <td>C</td>
+                        </tr>
+                        <tr>
+                          <td>Other browsers</td>
+                          <td>All others</td>
+                          <td>-</td>
+                          <td>-</td>
+                          <td>U</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                          <th>序号</th>
+                          <th>日期</th>
+                          <th>预控票编号</th>
+                          <th>工作任务</th>
+                          <th>签发人 / 负责人</th>
+                        </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                    <!-- /.box-body -->
+                  </div>
+                  <!-- /.box -->
+
                     <!-- Left col -->
-                    <section class="col-lg-7 connectedSortable">
+                    <section class="hide col-lg-7 connectedSortable">
                         <!-- Custom tabs (Charts with tabs)-->
                         <div class="nav-tabs-custom">
                             <!-- Tabs within a box -->
@@ -898,7 +1353,7 @@
                     </section>
                     <!-- /.Left col -->
                     <!-- right col (We are only adding the ID to make the widgets sortable)-->
-                    <section class="col-lg-5 connectedSortable">
+                    <section class="hide col-lg-5 connectedSortable">
 
                         <!-- Map box -->
                         <div class="box box-solid bg-light-blue-gradient">
@@ -1084,7 +1539,7 @@
         </footer>
 
         <!-- Control Sidebar -->
-        <aside class="control-sidebar control-sidebar-dark">
+        <aside class="hide control-sidebar control-sidebar-dark">
             <!-- Create the tabs -->
             <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
                 <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
@@ -1316,6 +1771,32 @@
     <script src="js/pages/dashboard.js"></script>
     <!-- AdminLTE for demo purposes -->
     <script src="js/demo.js"></script>
+    
+    <!-- DataTables -->
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+<!-- page script -->
+<script>
+    $(document).ready(function(){
+      // 在这里写你的代码...
+//    alert("Hello~!");
+    });
+  $(function ($) {
+//  $("#example1").DataTable();
+    $('#example1').DataTable({
+      "language": {
+        "url": "plugins/datatables/plug-ins/i18n/Chinese.json"
+        // "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Chinese.json"
+      },
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false
+    });
+  });
+</script>
 </body>
 
 </html>
